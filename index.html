@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnSphere - Learn Anything, Anytime, Anywhere</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Opening Status -->
+  <div id="status" class="status-banner"></div>
+
+  <!-- Header with navigation -->
+  <header>
+    <h1 class="logo">LearnSphere</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#join">Join Now</a></li>
+      </ul>
+    </nav>
+     <button id="themeBtn">Toggle Light/Dark Mode</button>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <h2>Learn Anything, Anytime, Anywhere</h2>
+    <p>LearnSphere connects curious minds with expert-led courses in tech, design, business and more. Build real skills at your own pace.</p>
+    <a href="#join" class="btn">Get Started</a>
+  </section>
+
+  <main>
+
+    <!-- Course cards -->
+    <section id="courses" class="courses">
+      <h2>Popular Courses</h2>
+
+      <div class="card-row">
+        <article class="card">
+          <h3>Web Development Basics</h3>
+          <p>Learn HTML, CSS and JavaScript from scratch and build your first website.</p>
+          <p class="price">$29</p>
+        </article>
+
+        <article class="card">
+          <h3>UI/UX Design Fundamentals</h3>
+          <p>Understand the principles of good design and create user-friendly interfaces.</p>
+          <p class="price">$39</p>
+        </article>
+
+        <article class="card">
+          <h3>Business Strategy 101</h3>
+          <p>Get an introduction to planning, marketing and growing a small business.</p>
+          <p class="price">$25</p>
+        </article>
+
+        <article class="card">
+          <h3>Data Science Essentials</h3>
+          <p>Explore data analysis, visualization and the basics of working with real datasets.</p>
+          <p class="price">$35</p>
+        </article>
+      </div>
+
+      <div class="course-selection">
+
+  <h3>Choose Your Courses</h3>
+
+    <div class="course-filters">
+    <button type="button" id="allBtn">All</button>
+    <button type="button" id="techBtn">Tech</button>
+    <button type="button" id="businessBtn">Business</button>
+    <button type="button" id="designBtn">Design</button>
+  </div>
+
+  <label class="tech">
+    <input type="checkbox" class="course" value="29">
+    Web Development Basics - $29
+  </label>
+
+  <label class="design">
+    <input type="checkbox" class="course" value="39">
+    UI/UX Design Fundamentals - $39
+  </label>
+
+  <label class="business">
+    <input type="checkbox" class="course" value="25">
+    Business Strategy 101 - $25
+  </label>
+
+  <label class="tech">
+    <input type="checkbox" class="course" value="35">
+    Data Science Essentials - $35
+  </label>
+
+  <p id="total">Total: $0</p>
+
+</div>
+    </section>
+
+    <!-- Why LearnSphere -->
+    <section id="why" class="why">
+      <div class="why-text">
+        <h2>Why Choose LearnSphere</h2>
+        <p>Thousands of learners trust LearnSphere to build real, job-ready skills without 
+          the cost or schedule of a traditional classroom. Every course is self-paced, so 
+          you can study on evenings, weekends, or whenever fits your life.</p>
+
+        <p id="extraText"> LearnSphere is designed to make learning flexible and accessible 
+          for students and professionals. Learners can explore courses in technology, design,
+          business, and data science while developing practical skills at their own pace.
+          The platform focuses on helping learners build knowledge that can be useful
+          for academic projects, personal development, and future career opportunities.
+        </p>
+        <button id="readMoreBtn" type="button">Read More</button>
+        <ol type="A">
+          <li>Learn at your own pace, on any device</li>
+          <li>Courses taught by industry experts</li>
+          <li>Affordable pricing for every learner</li>
+          <li>Certificates on course completion</li>
+          <li>Access course materials anytime, even offline</li>
+          <li>Join a global community of learners</li>
+        </ol>
+      </div>
+
+      <figure>
+        <img src="Assets/1.png" alt="Student learning online with a laptop">
+        <figcaption>Learn from anywhere, on your own schedule.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Schedule table -->
+    <section id="schedule" class="schedule">
+      <h2>Upcoming Live Sessions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Development Basics</td>
+            <td>Monday</td>
+            <td>6:00 PM</td>
+          </tr>
+          <tr>
+            <td>UI/UX Design Fundamentals</td>
+            <td>Wednesday</td>
+            <td>7:00 PM</td>
+          </tr>
+          <tr>
+            <td>Business Strategy 101</td>
+            <td>Friday</td>
+            <td>5:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sign up form -->
+    <section id="join" class="join">
+      <h2>Join LearnSphere</h2>
+      <form id="contactForm" action="#" method="get">
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="birth-year">Birth Year</label>
+          <input  type="text"  id="birth-year"  name="birth-year"  placeholder="Enter your birth year" >
+        </div>
+
+        <!-- Task 9: Special Notes Character Counter -->
+         <div class="form-field">
+          <label for="special-notes">Special Notes</label>
+          <textarea id="special-notes" name="special-notes" maxlength="100" 
+          placeholder="Enter any special instructions"></textarea>
+          <p id="charCount">100 characters remaining</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label>Choose a category</label>
+            <div class="option-box">
+              <label><input type="radio" name="category" value="tech"> Tech</label>
+              <label><input type="radio" name="category" value="design"> Design</label>
+              <label><input type="radio" name="category" value="business"> Business</label>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label>Preferences</label>
+            <div class="option-box">
+              <label><input type="checkbox" name="newsletter" value="yes"> Subscribe to newsletter</label>
+              <label><input type="checkbox" name="updates" value="yes"> Get course updates</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit">Sign Up</button>
+        <p id="successMessage"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 LearnSphere. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#join">Contact</a></li>
+      <li><a href="https://www.linkedin.com/help/linkedin/answer/a522735">Learn More</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
