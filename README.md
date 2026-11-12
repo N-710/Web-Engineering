@@ -5,8 +5,7 @@ LearnSphere is a simple website where users can explore different online courses
 ## How to Run the Project
 
 You can view the website here:
-
-**Live Demo:** 
+Live Demo:https://n-710.github.io/Web-Engineering/
 
 To run the project on your computer:
 1. Download or clone this repository.
