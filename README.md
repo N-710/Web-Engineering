@@ -1,6 +1,7 @@
-# LearnSphere – Online Learning Platform
+## LearnSphere – Online Learning Platform:
 
-LearnSphere is a simple website where users can explore different online courses like Web Development, UI/UX Design, Business, and Data Science. It is created using HTML, CSS, and JavaScript as a front-end development assignment.
+LearnSphere is an online learning website where students can explore different courses, including Web Development, UI/UX Design, Business, and Data Science. The website provides information about popular courses, their prices, upcoming live sessions, and learning opportunities.
+Users can select courses, calculate the total fees, filter courses by category, and register through a simple form. It also includes features like Light/Dark Mode, Read More/Read Less, an age-based discount message, and a character counter.
 
 ## How to Run the Project
 
